@@ -5,7 +5,7 @@ function getUserIpDetails(userResponse = {})
 }
 function getTopThree(studentMarks =[])
 {
-    const[first=null, second=null, third=null,..rest]=studentMarks;
+    const[first=null, second=null, third=null, ...rest]=studentMarks;
     return[first,second,third].sort();
 }
 export{getUserIpDetails, getTopThree}
